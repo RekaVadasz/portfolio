@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --second-color: #a09dab;
+    --main-color: #f75023;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    width: 100%;
+    padding: 30px 18%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.logo  {
+    width: 130px;
+    max-width: 100%;
+    height: 72px;
+}
+
+.navlist {
+    display: flex;
+
+}
+
+.navlist li {
+    position: relative;
+}
+
+.navlist a {
+    padding: 10px 27px; 
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navlist a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: var(--main-color);
+    transition: ease .40s;
+}
+
+.navlist a:hover::after {
+    width: 100%;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.top-btn {
+    padding: 9px 30px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    display: inline-block;
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    background: transparent;
+    transition: ease .50s;
+}
+
+.top-btn:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+}
