@@ -194,3 +194,38 @@ section {
     width: 540px;
     height: auto;
 }
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    width: 540px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text h2 {
+    margin: 8px 0px 25px;
+    font-size: var(--h2-font);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.about-text h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-text p {
+    max-width: 550px;
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 28px;
+    margin-bottom: 45px;
+}
