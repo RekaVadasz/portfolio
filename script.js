@@ -17,3 +17,13 @@ window.onscroll = () => {
     navlist.classList.remove("active");
 }
 
+const sr = ScrollReveal ({
+    distance: "45px",
+    duration: 2700,
+    reset: true
+});
+
+sr.reveal('.home-text',{delay: 350, origin: 'left'});
+sr.reveal('.home-img',{delay: 350, origin: 'right'});
+
+sr.reveal('.about,.skills,.portfolio,.work,.contact',{delay: 200, origin: 'bottom'});
