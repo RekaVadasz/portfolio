@@ -202,9 +202,13 @@ section {
     transform: scale(1.1);
 }
 
+.home-img {
+    text-align: center;
+}
+
 .home-img img {
     max-width: 100%;
-    width: 540px;
+    width: 350px;
     height: auto;
 }
 
@@ -217,7 +221,7 @@ section {
 }
 
 .about-img img {
-    width: 380px;
+    width: 550px;
     max-width: 100%;
     height: auto;
 }
